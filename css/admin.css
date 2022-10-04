@@ -1,0 +1,388 @@
+@font-face{
+    font-family: 'Tw Cen MT';
+    src: url("../fonts/TCM.ttf");
+}
+
+*{
+	font-family: 'Tw Cen MT';
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
+body{
+	background-image: url('../img/1142.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+#block{
+	float: left;
+	background-color: rgba(255,255,255,.8);
+	height: auto;
+	width: auto;
+	border-radius: 10px;
+    position: fixed;
+	margin: 12% 17px;
+	padding: 1%;
+	text-align: center;
+	box-shadow: 2px 0 15px 0px rgba(0,0,0,.3);
+}
+.ico{
+	height: 30px;
+	width: 30px;
+}
+#menu{
+	display: block;
+
+}
+#menu ul li{
+	display: block;
+	list-style-type: none;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+#menu ul li a{
+	text-decoration: none;
+}
+#corps{
+	height: 100%;
+	width: 100%;
+
+}
+#corpsSignUp{
+    padding-bottom: 10%;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding-top:10%;
+    color: white;
+}
+#corpsSignUp h2{
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-align: center;
+    font-size: 45px;
+    color:#c83f1b;
+}
+#corpsSignUp h4{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+#btnSingUp{
+    border-radius: 7px;
+    width: 274px;
+    color: white;
+    background-color: #c83f1b;
+    border: 1px solid #c83f1b;
+    margin: 10px;
+    padding: 13px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#corpsSignUp p{
+    padding-bottom: 1%;
+}
+#corpsSignUp p a{
+    text-decoration: none;
+    color: white;
+}
+#corpsSignUp p a:hover{
+    color: #0078d7;
+}
+.input{
+    display: inline-block;
+    font-size: 17px;
+    width: 250px;
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid #c83f1b;
+    padding: 12px;
+    margin: 7px;
+}
+#entete h3{
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 2%;
+	letter-spacing: 2px;
+	font-size: 30px;
+	color: white;
+	font-weight: lighter;
+}
+#users{
+	padding: 2%;
+}
+#users h4{
+	text-transform: uppercase;
+	color: #c83f1b;
+	text-align: center;
+	margin:1%;
+	font-weight: lighter;
+	font-size: 20px;
+}
+.tble{
+	width: 750px;
+	height: auto;
+	text-align: left;
+	margin-bottom: 2%;
+	border-radius: 7px;
+	border: 1px solid black;
+}
+.entete{
+	background-color: #c83f1b;
+	color: white;
+	height: 45px;
+	text-transform: uppercase;
+}
+.infos{
+	background-color: rgb(255,255,255);
+	color: black;
+	height: 35px;
+}
+#infos{
+    background-color: rgb(255,255,255);
+    color: black;
+    height: 45px;
+    text-align: center;
+}
+.supprimer{
+	text-decoration: none;
+	color: white;
+}
+.clien{
+	background-color: #c83f1b;
+}
+.c-dialog{
+ 	position: fixed;
+  	z-index: 100;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	padding: 2.4rem;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	background-color: rgba(0,0,0,.5);
+	transition: .2s;
+}
+
+.c-dialog_box {
+	flex: 1;
+	max-width:48rem;
+	margin: auto;
+	/*padding: 2.4rem;*/
+	background-color:rgba(0,0,0,.0);
+}
+.c-dialog[aria-hidden="true"] {
+  	visibility: hidden;
+  	opacity: 0;
+}
+#ajoutCoif{
+	background-color: rgb(255,255,255);
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 355px;
+	text-align: center;
+	height: auto;
+	box-shadow: 0 0 15px 2px rgba(153,153,153,.5);
+}
+#ajoutCoif .input{
+	color: black;
+}
+#ajoutCoif h2{
+	color: #c83f1b;
+  margin-bottom: 2%;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+#btnAjoutCoif{
+	width: 278px;
+	margin-top: 8%;
+	margin-bottom: 5%;
+	background-color: #c83f1b;
+	color: white;
+	border:1px solid #c83f1b;
+	font-size: 17px;
+	padding: 5%;
+	text-transform: uppercase;
+}
+.lst-contenaire{
+    position: relative;
+    background-color: #fff;
+    border: 2px solid rgb(200,63,27);
+    margin: 0 0 1.5em 0;
+    overflow: hidden;
+    width: 270px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 0.5%;
+}
+.lst-contenaire select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 17px;
+    width: 270px;
+    /*
+        On est sûr de ne plus voir
+        la flèche native
+    */
+    border: 0;
+    margin: 0;
+    padding: .75em;
+    border-radius: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lst-contenaire::after{
+    /* Le pointeur du select */
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right: .75em;
+    display: block;
+    width: 0; height: 0;
+    border-color: transparent;
+    border-top-color: #444;
+    border-width: 6px;
+    border-style: solid;
+    pointer-events: none;
+}
+#select{
+    display: inline-block;
+    text-align: center;
+}
+#btnnew{
+  color: white;
+  padding: 0.9%;
+  border-radius: 7px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+  margin-left: 899px;
+  font-size: 17px;
+  background-color: #c83f1b;
+  border: 1px solid #c83f1b;
+  width: 100px;
+}
+#infos{
+    display: inline;
+
+}
+.box-info{
+    margin-top: 2%;
+    border-left: 5px solid #c83f1b;
+    padding: .8%;
+    box-shadow: 0 0 15px 2px rgba(0,0,0,.3);
+    background-color: white;
+    width: 250px;
+    display: inline-block;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+.chiffres{
+    text-align: right;
+    padding-top: 5%;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #c83f1b;
+    padding-right: 5%;
+}
+.entetes{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight:lighter;
+}
+#liste1{
+    height: 450px;
+    overflow: auto;
+}
+#liste2{
+    height: 450px;
+    overflow: auto;
+}
+#liste1 h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%; 
+}
+#liste2 h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%; 
+}
+.info{
+    background-color: rgb(255,255,255);
+    color: black;
+    height: 35px;
+}
+#tble_s{
+    width: 650px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+    border-radius: 15px;
+    margin-bottom: 2%;
+}
+.clien{
+    background-color: #c83f1b;
+}
+#llien{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+#serv h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#btnAjoutT{
+    width: 258px;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    background-color: #c83f1b;
+    color: white;
+    border:1px solid #c83f1b;
+    font-size: 17px;
+    padding: 5%;
+    text-transform: uppercase;
+}
+#btnnew1{
+  color: white;
+  padding: 0.9%;
+  border-radius: 7px;
+  margin-bottom: -10%; 
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+  margin-left: 900px;
+  font-size: 17px;
+  background-color: #c83f1b;
+  border: 1px solid #c83f1b;
+  width: 100px;
+}
+#clien{
+    background-color: #c83f1b;
+}
+#lien{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
